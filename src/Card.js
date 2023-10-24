@@ -1,7 +1,6 @@
 
 function Card() {
     return (
-      <div className="Card">
         <div class="card" style="width: 18rem;">
   <img class="card-img-top" src="..." alt="Card image cap" />
   <div class="card-body">
@@ -10,7 +9,6 @@ function Card() {
     <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>
-      </div>
     );
   }
   
