@@ -1,3 +1,8 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+import {Link} from "react-router-dom";
+
 function Navbar() {
     return (
       <div className="Navbar">
@@ -8,14 +13,10 @@ function Navbar() {
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="#">Features </a>
-      <a class="nav-item nav-link" href="#">Pricing </a>
-      <a class="nav-item nav-link disabled" href="#">Disabled </a>
+      <Link class="nav-item nav-link active" to="/">Home </Link>
+      <Link class="nav-item nav-link" to="/Card">Card </Link>
+      <Link class="nav-item nav-link" to="/Contact">Contact </Link>
     </div>
-    <form class="form-inline">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" /></form>
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"> Search </button>
   </div>
 </nav>
       </div>
